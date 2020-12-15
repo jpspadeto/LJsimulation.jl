@@ -1,7 +1,6 @@
 #Computes the total Leonard-Jones potential energy 
 
-
-  function U_total(p,data)
+  function u_total_naive(p,data)
     ut = 0. 
     for i in 1:(data.N)-1, j in i+1:(data.N)
       dist = distpbc(p[i],p[j],data.side)

@@ -1,7 +1,7 @@
 name = "LJsimulation"
 uuid = "f847f8e0-37bd-4b88-ab76-710286f346cf"
 authors = ["jpspadeto <jpspadeto@gmail.com> and contributors"]
-version = "0.1.7"
+version = "0.1.8"
 
 [deps]
 Parameters = "d96e819e-fc66-5662-9728-84c9c7592b0a"
