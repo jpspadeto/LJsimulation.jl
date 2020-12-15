@@ -11,5 +11,5 @@ function linkedlists(p, Data)
     next_atom[iat] = first_atom[icell,jcell] 
     first_atom[icell,jcell] = iat 
   end
- return first_atom,next_atom
+ return Nt, first_atom,next_atom
 end
