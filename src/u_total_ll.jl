@@ -1,6 +1,6 @@
 #Computes the LJ potential energy of the system using linked lists
 
-function u_total_ll(p,Data,first_atom,next_atom)
+function u_total_ll(p,Data,first_atom,next_atom,nt)
   ut = 0.
   for iat in 1:Data.N
     icell = trunc(Int64,p[iat][1]/Data.cutoff) + 1 
