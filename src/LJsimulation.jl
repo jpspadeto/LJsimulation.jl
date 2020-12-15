@@ -6,6 +6,7 @@ module LJsimulation
   include("./initial-point.jl") #Initial points to do the simulations
   export initial_point
 
+  include("./wrapcell.jl")
   include("./distpbc.jl") #Computes the distance between two points considering PBC
   include("./linkedlists.jl") #Linked lists of the particles
   export linkedlists
