@@ -4,8 +4,7 @@ module LJsimulation
   export initial_point
 
   include("./distpbc.jl")
-  
-
+  export distpbc
 
 
 
