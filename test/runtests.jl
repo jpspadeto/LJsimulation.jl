@@ -2,5 +2,5 @@ using LJsimulation
 using Test
 
 @testset "LJsimulation.jl" begin
-    # Write your tests here.
+    @test f(2) == 4
 end
