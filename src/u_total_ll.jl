@@ -6,7 +6,7 @@ function u_total_ll(p,Data,first_atom,next_atom,nt)
     icell = trunc(Int64,p[iat][1]/Data.cutoff) + 1 
     jcell = trunc(Int64,p[iat][2]/Data.cutoff) + 1
     for i in icell-1:icell+1, j in jcell-1:jcell+1 
-      iw, jw = wrapcell(nt,i,j)
+      iw, jw = wrap_cell(nt,i,j)
       jat = first_atom[iw,jw]
       while jat > 0 
         if jat > iat 
