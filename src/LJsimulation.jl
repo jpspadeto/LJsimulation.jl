@@ -1,7 +1,6 @@
 module LJsimulation
 
-  f(x) = 2*x + 1
-
-  export f
+  include("./initial-point.jl")
+  export initial_point
 
 end
