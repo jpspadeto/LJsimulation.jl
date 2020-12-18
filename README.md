@@ -29,8 +29,11 @@ Data
 
 *Using a different data, for example a cutoff:*
 
-```julia
+```
 data = Data(cutoff=1.0)
+```
+
+```julia
 Data
   eps: Float64 5.0
   sig: Float64 0.5
