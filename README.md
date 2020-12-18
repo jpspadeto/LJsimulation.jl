@@ -8,10 +8,10 @@
 
 ## **To compute Leonard-Jones potential energy, the data to be used must be defined:**
 
-```julia
+
 *Using default data:*
 
-```
+```julia
 data = Data()
 Data
   eps: Float64 5.0
@@ -26,7 +26,7 @@ Data
 
 *Using a different data, for example a cutoff:*
 
-```
+```julia
 data = Data(cutoff=1.0)
 Data
   eps: Float64 5.0
@@ -43,7 +43,6 @@ Data
 
 ```
 p = initial_point(data)
-```
 ```
 
 ## **Naive Leonard-Jones potential energy of this system:**
