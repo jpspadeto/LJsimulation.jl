@@ -1,4 +1,6 @@
 # Leonard-Jones Potential Energy Simulation
+This package was developed in Julia to calculate the Leonard-Jones Potential Energy in two dimensions using different implementations, such as naive particles, linked lists, periodic boundary conditions and CPU parallelization.
+Enjoy it!  
 
 ## **Install with:** 
 
