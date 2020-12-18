@@ -14,6 +14,7 @@ Using default data:
 ...
 
 data = Data()
+
 ...
 
 Using a different data, for example a cutoff:
