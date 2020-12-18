@@ -6,7 +6,7 @@
 ] add https://github.com/jpspadeto/LJsimulation.jl
 ```
 
-**To compute Leonard-Jones potential energy using the default data:**
+**To compute Leonard-Jones potential energy, the data to be used must be defined:**
 
 *Using default data:*
 
@@ -20,31 +20,33 @@ data = Data()
 data = Data(cutoff=1.0)
 ```
 
-**Creating the initial points for the calculation:**
+*Creating the initial points for the calculation:*
 
 ```
 p = initial_point(data)
 ```
 
-**Leonard-Jones potential energy of this system:**
+*Naive Leonard-Jones potential energy of this system:*
 
 ```
 u_total_naive(p,data)
 ```
 
-**Sets the first_atom and next_atom:**
+**To compute the Leonard-Jones potential energy using linked lists, the parameters must be defined:**
+
+*Sets the first_atom and next_atom:*
 
 ```
 nt, first_atom, next_atom = linkedlists(p,data)
 ```
 
-**Leonard-Jones potential energy of this system using linked lists:**
+*Therefore, the calculation of Leonard-Jones potential energy using linked lists:*
 
 ```
 u_total_ll(p,data,first_atom,next_atom,nt) 
 ```
 
-**Leonard-Jones potential energy of this system using linked lists and parallelization:**
+*Using a CPU parallelization:*
 
 ```
 u_total_parallel(p,data,first_atom,next_atom,nt)
