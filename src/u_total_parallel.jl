@@ -3,8 +3,7 @@
 
 function u_total_parallel(p,Data,first_atom,next_atom,nt) 
   nthreads = Threads.nthreads()
-  ut = zeros(nthreads)
-  
+  ut = zeros(nthreads) 
   Threads.@threads for iat in 1:Data.N
     icell = trunc(Int64,p[iat][1]/Data.cutoff) + 1 
     jcell = trunc(Int64,p[iat][2]/Data.cutoff) + 1
@@ -16,7 +15,7 @@ function u_total_parallel(p,Data,first_atom,next_atom,nt)
         if jat > iat 
           dist = distpbc(p[jat],p[iat],Data.side)
           if dist <= Data.cutoff
-            ut += upair(dist,Data)
+            ut[id] += upair(dist,Data)
           end
         end
        jat = next_atom[jat]
