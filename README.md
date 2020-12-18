@@ -8,13 +8,13 @@
 
 **To compute Leonard-Jones potential energy using the default data:**
 
-**Using default data:**
+*Using default data:*
 
 ```
 data = Data()
 ```
 
-**Using a different data, for example a cutoff:**
+*Using a different data, for example a cutoff:*
 
 ```
 data = Data(cutoff=1.0)
