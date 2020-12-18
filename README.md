@@ -11,8 +11,11 @@
 
 *Using default data:*
 
-```julia
+```
 data = Data()
+```
+
+```julia
 Data
   eps: Float64 5.0
   sig: Float64 0.5
