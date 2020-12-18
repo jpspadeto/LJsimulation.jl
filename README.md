@@ -34,7 +34,7 @@ u_total_naive(p,data)
 
 **To compute the Leonard-Jones potential energy using linked lists, the parameters must be defined:**
 
-*Sets the first_atom and next_atom:*
+*Sets the number of cells(nt), first_atom and next_atom:*
 
 ```
 nt, first_atom, next_atom = linkedlists(p,data)
