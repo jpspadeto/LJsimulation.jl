@@ -1,7 +1,7 @@
 #Computes the LJ potential energy of the system using linked lists and parallelization
 
 
-function u_total_ll(p,Data,first_atom,next_atom,nt) 
+function u_total_parallel(p,Data,first_atom,next_atom,nt) 
   nthreads = Threads.nthreads()
   ut = zeros(nthreads)
   

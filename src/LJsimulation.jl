@@ -15,8 +15,10 @@ module LJsimulation
   include("./u_total_naive.jl") #Computes the total LJ potential energy
   export u_total_naive
 
-  include("./u_total_ll.jl")#Computes the total LJ potential energy using linked lists
+  include("./u_total_ll.jl") #Computes the total LJ potential energy using linked lists
   export u_total_ll
 
+  include("./u_total_parallel.jl") #Computes the total LJ potential energy using linked lists and parallelization
+  export u_total_parallel
 
 end
