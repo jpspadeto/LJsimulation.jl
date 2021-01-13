@@ -49,7 +49,7 @@ Data
 julia> p = initial_point(data)
 ```
 
-## **Naive Leonard-Jones potential energy of this system:**
+## **Naive Leonard-Jones potential energy of the system:**
 
 ```julia
 julia> u_total_naive(p,data)
@@ -73,4 +73,20 @@ julia> u_total_ll(p,data,first_atom,next_atom,nt)
 
 ```julia
 julia> u_total_parallel(p,data,first_atom,next_atom,nt)
+```
+## **To compute Total Force and Leonard-Jones potential energy of the particles of the system:**
+
+*Using a list of random values for the force vectors:*
+```julia
+julia> f = [ Vector{Float64}(undef,2) for i in 1:length(p) ] 
+```
+
+*To compute the Potential Energy and the Force Vector of every particle in the system:* 
+```julia
+julia> force_energy!(p,f,data)
+```
+
+*If you want to see the component forces of the vectors, for example, do:*
+```julia
+julia> f[1]
 ```
