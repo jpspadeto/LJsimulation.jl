@@ -5,7 +5,7 @@ function force_energy!(p,f,Data)
     for x in 1:length(f)
       f[x] .= 0.
     end
-      for i in 1:Data.N-1, j in i+1:Data.N
+      for i in 1:data.N-1, j in i+1:data.N
         dist = dmin(p[i],p[j],Data.side)
           if dist <= Data.cutoff
           upair, fpair = force_pair(p[i],p[j],dist,Data)
