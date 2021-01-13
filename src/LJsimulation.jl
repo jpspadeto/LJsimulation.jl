@@ -21,6 +21,6 @@ module LJsimulation
   include("./u_total_parallel.jl") #Computes the total LJ potential energy using linked lists and parallelization
   export u_total_parallel
 
-  include("./forcepair.jl")
+  include("./force_pair.jl")
 
 end
