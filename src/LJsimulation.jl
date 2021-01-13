@@ -22,5 +22,7 @@ module LJsimulation
   export u_total_parallel
 
   include("./force_pair.jl")
+  include("./force_energy.jl")
+  export force_energy!
 
 end

@@ -1,6 +1,6 @@
 #Computes the force and energy of every particles of the system 
 
-function total_force!(p,f,Data)
+function force_energy!(p,f,Data)
     ut = 0.
     for x in 1:length(f)
       f[x] .= 0.
